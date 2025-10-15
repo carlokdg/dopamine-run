@@ -2223,3 +2223,461 @@ Memory consumption went from 432.4 MB to 432.2 MB.
 Total: 7.544542 ms (FindLiveObjects: 0.158875 ms CreateObjectMapping: 0.053375 ms MarkObjects: 6.978750 ms  DeleteObjects: 0.353375 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f373000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.316 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.459 seconds
+Domain Reload Profiling: 776ms
+	BeginReloadAssembly (102ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (173ms)
+		LoadAssemblies (153ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (53ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (46ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (460ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (388ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (59ms)
+			ProcessInitializeOnLoadAttributes (196ms)
+			ProcessInitializeOnLoadMethodAttributes (126ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 1.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2764 unused Assets / (347.4 KB). Loaded Objects now: 3233.
+Memory consumption went from 441.8 MB to 441.5 MB.
+Total: 8.392833 ms (FindLiveObjects: 0.174083 ms CreateObjectMapping: 0.054542 ms MarkObjects: 7.715500 ms  DeleteObjects: 0.448208 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f373000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.301 seconds
+Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.437 seconds
+Domain Reload Profiling: 739ms
+	BeginReloadAssembly (97ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (163ms)
+		LoadAssemblies (139ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (52ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (46ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (437ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (367ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (59ms)
+			ProcessInitializeOnLoadAttributes (193ms)
+			ProcessInitializeOnLoadMethodAttributes (108ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2764 unused Assets / (252.1 KB). Loaded Objects now: 3233.
+Memory consumption went from 451.2 MB to 451.0 MB.
+Total: 8.180666 ms (FindLiveObjects: 0.228791 ms CreateObjectMapping: 0.056834 ms MarkObjects: 7.492333 ms  DeleteObjects: 0.402041 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f373000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.278 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.479 seconds
+Domain Reload Profiling: 759ms
+	BeginReloadAssembly (93ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (121ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (51ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (45ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (480ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (397ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (202ms)
+			ProcessInitializeOnLoadMethodAttributes (120ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2764 unused Assets / (230.6 KB). Loaded Objects now: 3233.
+Memory consumption went from 460.6 MB to 460.4 MB.
+Total: 8.003625 ms (FindLiveObjects: 0.151125 ms CreateObjectMapping: 0.059125 ms MarkObjects: 7.371375 ms  DeleteObjects: 0.421542 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1338.127207 seconds.
+  path: Assets/EnviromentDownloaded/Prototype Map/Materials/PrototypeMap_Obstacles.mat
+  artifactKey: Guid(b9e8e2fc0724d5941ad454b0ddf9d947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnviromentDownloaded/Prototype Map/Materials/PrototypeMap_Obstacles.mat using Guid(b9e8e2fc0724d5941ad454b0ddf9d947) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e34d3010b36cce8c631309fb538b7e75') in 0.210264125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 215.557432 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Sci-fi_Antenna.prefab
+  artifactKey: Guid(1f4c5e97bb3997b4092f1003ab99c7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Sci-fi_Antenna.prefab using Guid(1f4c5e97bb3997b4092f1003ab99c7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee1db5d2ed8f55d68df4448a624a0e59') in 0.038028916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.506181 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Ground/SP_Ground02.prefab
+  artifactKey: Guid(c54ae8c68c5cdd54585f7b7e66899ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Ground/SP_Ground02.prefab using Guid(c54ae8c68c5cdd54585f7b7e66899ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '315b881eb4998990f8e46888563e4fc4') in 0.007303459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Ground/SP_Ground04.prefab
+  artifactKey: Guid(4b71d8ad1257e4348a520f4911d8e47c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Ground/SP_Ground04.prefab using Guid(4b71d8ad1257e4348a520f4911d8e47c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1ed0994bcec16f9727b57c017f1ee27') in 0.00350675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.234422 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Crystals/SP_Crystal02.prefab
+  artifactKey: Guid(30a26bac0ab527048a8bfb3201f4cf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Crystals/SP_Crystal02.prefab using Guid(30a26bac0ab527048a8bfb3201f4cf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b467403b872f4ee9f4862c38f73b0cda') in 0.007056917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 268.042308 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Mountains/SP_Mountain02.prefab
+  artifactKey: Guid(fb5f44c1d4546d545b66d2ecf2fcb447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Mountains/SP_Mountain02.prefab using Guid(fb5f44c1d4546d545b66d2ecf2fcb447) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '415f6a2f542950ef61f246976cd4d1b2') in 0.008061083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Mountains/SP_Mountain03.prefab
+  artifactKey: Guid(4bc5d8d963ddfac48b69f5bba53a41c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Mountains/SP_Mountain03.prefab using Guid(4bc5d8d963ddfac48b69f5bba53a41c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '55443257ced658999fd788595d2df7bf') in 0.003171333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.484180 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Plants/SP_Plant02.prefab
+  artifactKey: Guid(5acc9cbd593006541baba3612a661cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Plants/SP_Plant02.prefab using Guid(5acc9cbd593006541baba3612a661cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49644c91a0a899d11b6f43ab856b0137') in 0.0080285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Plants/SP_Plant09.prefab
+  artifactKey: Guid(1e293ccac7f5e0e42a10e3b989ffac87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Plants/SP_Plant09.prefab using Guid(1e293ccac7f5e0e42a10e3b989ffac87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e92c2ee34e99a9503c7b9e58a235f2e3') in 0.003109917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Plants/SP_Plant04.prefab
+  artifactKey: Guid(d125ce082a85be34abe8de81c5dc33b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Plants/SP_Plant04.prefab using Guid(d125ce082a85be34abe8de81c5dc33b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27bf53c06335ead5d2a63e85734e0ed8') in 0.003760041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Plants/SP_Plant06.prefab
+  artifactKey: Guid(aba00a3a9f0d5bc4cbd0b1bc12a3c58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Plants/SP_Plant06.prefab using Guid(aba00a3a9f0d5bc4cbd0b1bc12a3c58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1eb5c29269d9262a44bcd5a04ae1ade8') in 0.003628958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Plants/SP_Plant05.prefab
+  artifactKey: Guid(95f8af9d672aa034db19bf032d3481b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Plants/SP_Plant05.prefab using Guid(95f8af9d672aa034db19bf032d3481b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85c6469cd1e8697533e8c24e7d90c428') in 0.003077375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.426167 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Rocks/SP_Rock02.prefab
+  artifactKey: Guid(d55a67cc090c4bf468c95c4456059261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Rocks/SP_Rock02.prefab using Guid(d55a67cc090c4bf468c95c4456059261) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb242128e001cd76558645a142135f6e') in 0.007554625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Rocks/SP_Rock04.prefab
+  artifactKey: Guid(5d2b5fef9ee314143b57f1eba3f466cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Rocks/SP_Rock04.prefab using Guid(5d2b5fef9ee314143b57f1eba3f466cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80c442b19197e156996b1640fac17e11') in 0.003914334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Rocks/SP_Rock05.prefab
+  artifactKey: Guid(db774f6832a181146ae76eea65427fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Rocks/SP_Rock05.prefab using Guid(db774f6832a181146ae76eea65427fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fac978e7e0eadc779ac3a3c45c4800dc') in 0.00468975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Rocks/SP_Rock03.prefab
+  artifactKey: Guid(870918a744f66c8439b5ff9cfdf6c36d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Rocks/SP_Rock03.prefab using Guid(870918a744f66c8439b5ff9cfdf6c36d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1692dbb0bed9748b8c2ae1ea69ac17a') in 0.004682958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.624096 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Stones/SP_Stone02.prefab
+  artifactKey: Guid(b23ce536c32c29840ba9756ef884fb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Stones/SP_Stone02.prefab using Guid(b23ce536c32c29840ba9756ef884fb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0891afd20bf9eecfa9ba788504a484fc') in 0.008248542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.439722 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Trees/SP_Tree02.prefab
+  artifactKey: Guid(be5309fc15bcdb84cab2472d87887100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Trees/SP_Tree02.prefab using Guid(be5309fc15bcdb84cab2472d87887100) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0de0abbab9c61ef42744ee2a0db56f50') in 0.009338125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Trees/SP_Tree04.prefab
+  artifactKey: Guid(57a0235c1101e9a46848ded0cc9ff014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolySpaceAssets/Prefabs/Space Forest/SP_Trees/SP_Tree04.prefab using Guid(57a0235c1101e9a46848ded0cc9ff014) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a67633a575c07c9440b646639c52686') in 0.002933 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f373000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.340 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.425 seconds
+Domain Reload Profiling: 766ms
+	BeginReloadAssembly (114ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (183ms)
+		LoadAssemblies (162ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (55ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (48ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (425ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (362ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (185ms)
+			ProcessInitializeOnLoadMethodAttributes (110ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2764 unused Assets / (402.6 KB). Loaded Objects now: 3273.
+Memory consumption went from 472.5 MB to 472.1 MB.
+Total: 7.705792 ms (FindLiveObjects: 0.195916 ms CreateObjectMapping: 0.052542 ms MarkObjects: 6.980750 ms  DeleteObjects: 0.476250 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f373000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.277 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.429 seconds
+Domain Reload Profiling: 706ms
+	BeginReloadAssembly (94ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (122ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (52ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (45ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (429ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (364ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (191ms)
+			ProcessInitializeOnLoadMethodAttributes (115ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2764 unused Assets / (149.8 KB). Loaded Objects now: 3273.
+Memory consumption went from 481.9 MB to 481.8 MB.
+Total: 7.958666 ms (FindLiveObjects: 0.147208 ms CreateObjectMapping: 0.053167 ms MarkObjects: 7.310333 ms  DeleteObjects: 0.447500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f373000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.307 seconds
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.394 seconds
+Domain Reload Profiling: 702ms
+	BeginReloadAssembly (97ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (169ms)
+		LoadAssemblies (148ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (51ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (45ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (394ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (333ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (105ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2764 unused Assets / (0.5 MB). Loaded Objects now: 3273.
+Memory consumption went from 491.3 MB to 490.7 MB.
+Total: 7.571875 ms (FindLiveObjects: 0.184917 ms CreateObjectMapping: 0.055041 ms MarkObjects: 6.930917 ms  DeleteObjects: 0.400750 ms)
+
+Prepare: number of updated asset objects reloaded= 0

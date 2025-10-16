@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1512
     height: 945
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -1000,7 +1000,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -168.30746, y: -344.21436, z: 126.97282}
+    m_Target: {x: 288.17477, y: -415.3318, z: 1251.8057}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
@@ -1048,11 +1048,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+    m_Target: {x: 0.16434193, y: 0.12745257, z: -0.02141768, w: 0.9779001}
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
-    m_Target: 4.648548
+    m_Target: 709.84644
     speed: 2
     m_Value: 10
   m_Ortho:

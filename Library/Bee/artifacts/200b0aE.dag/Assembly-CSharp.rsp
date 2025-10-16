@@ -411,6 +411,8 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.0.51f1-arm64/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/CollectableRotate.cs"
 "Assets/Scripts/CollectPowerUpss.cs"
+"Assets/Scripts/CollisionDetect.cs"
+"Assets/Scripts/MasterInfo.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/SegmentGenerator.cs"
 -langversion:9.0

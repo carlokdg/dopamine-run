@@ -1090,6 +1090,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &111149636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1770,6 +1773,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1 &259978369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2168,6 +2174,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2261,6 +2268,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &330585548
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4141a35457cb146bf873ed32bac17825, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &339240400
 GameObject:
   m_ObjectHideFlags: 0
@@ -4187,7 +4216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &636500776
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4283,6 +4312,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &643583376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5135,6 +5167,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1001 &824780617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7009,6 +7044,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &1217212322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7170,6 +7208,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1 &1239341598
 GameObject:
   m_ObjectHideFlags: 0
@@ -7446,6 +7487,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 0}
   playerAnim: {fileID: 0}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1 &1267464541 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8514374376476389842, guid: d273c433bfe67834796291b54c982bec, type: 3}
@@ -7486,6 +7530,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1001 &1269049692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7582,6 +7629,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &1286977398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7685,6 +7735,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &1297986294
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7814,6 +7867,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1 &1315486418
 GameObject:
   m_ObjectHideFlags: 0
@@ -8677,6 +8733,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1001 &1466378102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8881,6 +8940,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 0}
   playerAnim: {fileID: 0}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!114 &1467153514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8895,6 +8957,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 0}
   playerAnim: {fileID: 0}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1 &1473469021
 GameObject:
   m_ObjectHideFlags: 0
@@ -9001,6 +9066,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &1474017005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9186,6 +9254,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &1478034158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9310,6 +9381,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1 &1504545643
 GameObject:
   m_ObjectHideFlags: 0
@@ -9431,6 +9505,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &1513789237
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10106,6 +10183,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &1631250023
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10230,6 +10310,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1001 &1639765876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10333,6 +10416,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1 &1659659582
 GameObject:
   m_ObjectHideFlags: 0
@@ -10363,6 +10449,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1812547311}
+  - {fileID: 1921453576}
   m_Father: {fileID: 906048393}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1684020132
@@ -10488,6 +10575,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 1921453577}
+  mainCam: {fileID: 330585543}
+  fadeOut: {fileID: 636500775}
 --- !u!1001 &1688091894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10948,6 +11038,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1001 &1754701095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11463,6 +11556,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &1823862762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12010,6 +12106,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1001 &1908318513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12113,6 +12212,138 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
+--- !u!1 &1921453575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921453576}
+  - component: {fileID: 1921453577}
+  m_Layer: 0
+  m_Name: CollisionFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1921453576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921453575}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1659659583}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1921453577
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921453575}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a126a09b5c8e942c8847b8241fe915cb, type: 3}
+  m_Resource: {fileID: 8300000, guid: a126a09b5c8e942c8847b8241fe915cb, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.553
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1930233633 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1818332099616921954, guid: 30a26bac0ab527048a8bfb3201f4cf00, type: 3}
@@ -12695,6 +12926,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1001 &1992216549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12798,6 +13032,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1001 &1996944273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12901,6 +13138,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1 &1998619055
 GameObject:
   m_ObjectHideFlags: 0
@@ -13439,6 +13679,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!1 &2051654797
 GameObject:
   m_ObjectHideFlags: 0
@@ -13608,6 +13851,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &2077362229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13885,6 +14131,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &2085970527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13964,6 +14213,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &2104561622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14086,6 +14338,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &2116406663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14208,6 +14463,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
+  collisionFX: {fileID: 0}
+  mainCam: {fileID: 0}
+  fadeOut: {fileID: 0}
 --- !u!65 &2143396138
 BoxCollider:
   m_ObjectHideFlags: 0

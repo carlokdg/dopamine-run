@@ -12,10 +12,11 @@ public class MainMenuControl : MonoBehaviour
     [SerializeField] GameObject menuControls;
 
     [SerializeField] AudioSource buttonSelect;
+    
 
     void Start()
     {
-
+      
     }
 
     void Update()
@@ -44,10 +45,10 @@ public class MainMenuControl : MonoBehaviour
 
     }
 
-   
+
     IEnumerator AnimCam()
 
-    
+
     {
         animCam.GetComponent<Animator>().Play("AnimCam");
         bounceText.SetActive(false);
@@ -56,7 +57,8 @@ public class MainMenuControl : MonoBehaviour
         mainCam.SetActive(true);
         animCam.SetActive(false);
         menuControls.SetActive(true);
-        
+
 
     }
+    
 }

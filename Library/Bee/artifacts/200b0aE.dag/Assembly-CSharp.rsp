@@ -412,6 +412,7 @@
 "Assets/Scripts/CollectableRotate.cs"
 "Assets/Scripts/CollectPowerUpss.cs"
 "Assets/Scripts/CollisionDetect.cs"
+"Assets/Scripts/MainMenuControl.cs"
 "Assets/Scripts/MasterInfo.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/SegmentGenerator.cs"

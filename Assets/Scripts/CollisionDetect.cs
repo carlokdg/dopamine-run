@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;  
 
 public class CollisionDetect : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class CollisionDetect : MonoBehaviour
     [SerializeField] GameObject thePlayer;
     [SerializeField] GameObject playerAnim;
     [SerializeField] AudioSource collisionFX;
+    [SerializeField] AudioSource GameOverVoice;
     [SerializeField] GameObject mainCam;
     [SerializeField] GameObject fadeOut;
     void OnTriggerEnter(Collider other)
@@ -24,7 +26,10 @@ public class CollisionDetect : MonoBehaviour
         playerAnim.GetComponent<Animator>().Play("Stumble Backwards");
         mainCam.GetComponent<Animator>().Play("CollisionCam");
         yield return new WaitForSeconds(1);
+        GameOverVoice.Play();
         fadeOut.SetActive(true);
+        yield return new WaitForSeconds(4);
+        SceneManager.LoadScene(0);
 
     }
 

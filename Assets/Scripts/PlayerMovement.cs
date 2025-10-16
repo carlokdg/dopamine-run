@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Refs")]
-    [SerializeField] private Animator animator;          // assegna qui l'Animator giusto!
-    [SerializeField] private Rigidbody rb;               // assegna o lascialo auto-find
+    [SerializeField] private Animator animator;          
+    [SerializeField] private Rigidbody rb;             
 
     [Header("Move")]
     public float playerSpeed = 2f;
@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Jump")]
     public float jumpForce = 5f;
-    public string jumpStateName = "Running Forward Flip"; // deve combaciare col nome nello State
+    public string jumpStateName = "Running Forward Flip"; 
     private bool isGrounded = true;
 
     void Awake()
@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         if (rb == null) rb = GetComponent<Rigidbody>();
         if (animator == null)
         {
-            // prova a recuperarlo dal figlio (spesso il modello è figlio del player)
+           
             animator = GetComponentInChildren<Animator>();
         }
         if (animator == null)
@@ -47,21 +47,20 @@ public class PlayerMovement : MonoBehaviour
         x = Mathf.Clamp(x, leftlimit, rightlimit);
         transform.position = new Vector3(x, transform.position.y, transform.position.z);
 
-        // SALTO
+      
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
 
-            // Opzione A: usa direttamente lo stato (assicurati che esista e sia nel Base Layer)
+       
             if (animator != null)
-                animator.Play(jumpStateName, 0, 0f); // layer 0, riavvia a time 0
+                animator.Play(jumpStateName, 0, 0f); 
 
-            // Opzione B (consigliata): usa un Trigger "Jump" e transizioni nell'Animator
-            // if (animator != null) animator.SetTrigger("Jump");
+            
         }
 
-        // Tasto di test per forzare l’animazione anche senza salto (debug)
+        
         if (Input.GetKeyDown(KeyCode.J) && animator != null)
             animator.Play(jumpStateName, 0, 0f);
     }

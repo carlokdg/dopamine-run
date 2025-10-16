@@ -8463,13 +8463,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3147e5e5953f2439bb1e8a27e085d577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAnimJump: {fileID: 323417336}
+  animator: {fileID: 323417339}
+  rb: {fileID: 0}
   playerSpeed: 15
   horizontalSpeed: 10
+  speedIncreaseRate: 0.5
   rightlimit: 5.5
   leftlimit: -5.5
-  speedIncreaseRate: 0.5
   jumpForce: 12
+  jumpStateName: Running Forward Flip
 --- !u!136 &1398927146
 CapsuleCollider:
   m_ObjectHideFlags: 0

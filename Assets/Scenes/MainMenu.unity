@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 19041399}
   - component: {fileID: 19041398}
   m_Layer: 5
-  m_Name: Button
+  m_Name: InvisibleButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5640,7 +5640,7 @@ Animator:
   m_GameObject: {fileID: 1492405220}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7bbb923a098cb4627a49578df5ce6850, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1807219e88d6d4e66bd4144520ffc0fe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

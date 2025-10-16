@@ -259,3 +259,11 @@ Memory consumption went from 98.6 MB to 98.3 MB.
 Total: 7.480375 ms (FindLiveObjects: 0.149084 ms CreateObjectMapping: 0.050584 ms MarkObjects: 6.960125 ms  DeleteObjects: 0.320291 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 66.328668 seconds.
+  path: Assets/Animations/MMFadeOut.anim
+  artifactKey: Guid(057df6951867f4ac490fb8ab9ff0399c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/MMFadeOut.anim using Guid(057df6951867f4ac490fb8ab9ff0399c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41b24bbd3672b63b56f04e6f8a554b97') in 0.014781292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+

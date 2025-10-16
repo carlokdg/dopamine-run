@@ -8466,6 +8466,7 @@ MonoBehaviour:
   horizontalSpeed: 10
   rightlimit: 5.5
   leftlimit: -5.5
+  speedIncreaseRate: 0.5
 --- !u!136 &1398927146
 CapsuleCollider:
   m_ObjectHideFlags: 0

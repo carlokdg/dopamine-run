@@ -1,37 +1,28 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 public class NewMonoBehaviourScript : MonoBehaviour
-
-
 {
-
-    public GameObject segmentMap01;
-    public GameObject segmentMap02;
-    public GameObject segmentMap03;
-    public GameObject segmentMap04;
-    public GameObject segmentMap05;
-    public GameObject segmentMap06;
-    public GameObject segmentMap07;
-    
-
-
-    void Start()
-    {
-        StartCoroutine(SegmentGen());
-    }
+    public GameObject[] segment;
+    [SerializeField] int zPos = 50;
+    [SerializeField] bool creatingSegment = false;
+    [SerializeField] int segmentNum;
 
     void Update()
     {
-
+        if (!creatingSegment)
+        {
+            creatingSegment = true;
+            StartCoroutine(SegmentGen());
+        }
     }
+
     IEnumerator SegmentGen()
     {
-        yield return new WaitForSeconds(5);
-        segmentMap02.SetActive(true);
-        yield return new WaitForSeconds(5);
-        segmentMap03.SetActive(true);
-
+        segmentNum = Random.Range(0, segment.Length);
+        Instantiate(segment[segmentNum], new Vector3(0, 0, zPos), Quaternion.identity);
+        zPos += 50;
+        yield return new WaitForSeconds(3);
+        creatingSegment = false;
     }
 }

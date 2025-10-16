@@ -8343,8 +8343,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7d03e2cf5b5484e4494133b8959f8dc0, type: 3}
-  m_Resource: {fileID: 8300000, guid: 7d03e2cf5b5484e4494133b8959f8dc0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8a57b460cfeab4e6cbbe024dbf44dad5, type: 3}
+  m_Resource: {fileID: 8300000, guid: 8a57b460cfeab4e6cbbe024dbf44dad5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.676
   m_Pitch: 1
@@ -8466,7 +8466,7 @@ MonoBehaviour:
   animator: {fileID: 323417339}
   rb: {fileID: 0}
   playerSpeed: 12
-  horizontalSpeed: 8
+  horizontalSpeed: 5
   speedIncreaseRate: 0.5
   rightlimit: 5.5
   leftlimit: -5.5

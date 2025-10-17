@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] AudioSource powerFX;
 
     [Header("Move")]
+
     public float playerSpeed = 2f;
     public float horizontalSpeed = 3f;
     public float speedIncreaseRate = 0.5f;

@@ -7,7 +7,9 @@ public class CollisionDetect : MonoBehaviour
 {
 
 
+    public ParticleSystem explosionParticle;
     [SerializeField] GameObject thePlayer;
+
     [SerializeField] GameObject playerAnim;
     [SerializeField] AudioSource collisionFX;
     [SerializeField] AudioSource GameOverVoice;
@@ -25,6 +27,7 @@ public class CollisionDetect : MonoBehaviour
         thePlayer.GetComponent<PlayerMovement>().enabled = false;
         playerAnim.GetComponent<Animator>().Play("Stumble Backwards");
         mainCam.GetComponent<Animator>().Play("CollisionCam");
+        explosionParticle.Play();
         yield return new WaitForSeconds(1);
         GameOverVoice.Play();
         fadeOut.SetActive(true);

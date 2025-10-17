@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Refs")]
     [SerializeField] private Animator animator;
     [SerializeField] private Rigidbody rb;
+    [SerializeField] AudioSource powerFX;
 
     [Header("Move")]
     public float playerSpeed = 2f;
@@ -113,6 +114,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (animator != null && !string.IsNullOrEmpty(flyStateName))
             animator.CrossFadeInFixedTime(flyStateName, 0.1f, 0, 0f);
+
+
+             powerFX.Play();
 
         bool prevUseGravity = rb.useGravity;
         float savedBaseSpeed = basePlayerSpeed;

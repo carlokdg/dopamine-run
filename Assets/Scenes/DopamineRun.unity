@@ -8542,12 +8542,15 @@ MonoBehaviour:
   leftlimit: -5.5
   jumpForce: 12
   jumpStateName: Running Forward Flip
-  immuneDuration: 5
+  immuneDuration: 3
   flyMode: 0
   glideRiseHeight: 3
   glideRiseTime: 0.6
   forwardBoostWhileFlying: 1.5
-  boostedJumpForce: 10
+  boostedJumpForce: 15
+  runStateName: Running
+  flyStateName: Flying
+  flyDuration: 3
 --- !u!136 &1398927146
 CapsuleCollider:
   m_ObjectHideFlags: 0

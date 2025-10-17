@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -25,55 +26,46 @@ public class PlayerMovement : MonoBehaviour
     public float immuneDuration = 5f;
 
     public enum FlyMode { GlideNoGravity, BoostedJump }
-    [Tooltip("GlideNoGravity: gravità OFF e volo; BoostedJump: salto potenziato con gravità ON")]
     public FlyMode flyMode = FlyMode.GlideNoGravity;
 
-    [Tooltip("Altezza da guadagnare all'inizio del volo (solo Glide)")]
     public float glideRiseHeight = 3f;
-
-    [Tooltip("Secondi impiegati per salire all'altezza di glide (solo Glide)")]
     public float glideRiseTime = 0.6f;
-
-    [Tooltip("Boost di velocità in avanti SOLO durante il volo (opzionale)")]
     public float forwardBoostWhileFlying = 1.5f;
-
-    [Tooltip("Forza di super salto per la modalità BoostedJump")]
     public float boostedJumpForce = 10f;
+
+    [Header("Animation States")]
+    public string runStateName = "Running";
+    public string flyStateName = "Flying";
+
+    [Header("Animation Timing")]
+    public float flyDuration = 5f;
 
     private bool isImmune = false;
     private bool isFlying = false;
     private float basePlayerSpeed;
     private Coroutine flyCo;
+    private float prevAnimatorSpeed = 1f;
 
     void Awake()
     {
         if (rb == null) rb = GetComponent<Rigidbody>();
         if (animator == null) animator = GetComponentInChildren<Animator>();
-        if (animator == null)
-            Debug.LogError("[PlayerMovement] Animator mancante: assegnalo nell’Inspector.");
-        else if (animator.runtimeAnimatorController == null)
-            Debug.LogError("[PlayerMovement] Nessun Animator Controller assegnato all’Animator.");
-
         basePlayerSpeed = playerSpeed;
     }
 
     void Update()
     {
-        // Aumenti progressivi di velocità
         playerSpeed += speedIncreaseRate * Time.deltaTime;
         horizontalSpeed += speedIncreaseRate * Time.deltaTime;
 
-        // Avanzamento continuo in avanti
         transform.Translate(Vector3.forward * (playerSpeed * Time.deltaTime), Space.World);
 
-        // Movimento laterale con limiti
         float x = transform.position.x;
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))  x -= horizontalSpeed * Time.deltaTime;
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) x += horizontalSpeed * Time.deltaTime;
         x = Mathf.Clamp(x, leftlimit, rightlimit);
         transform.position = new Vector3(x, transform.position.y, transform.position.z);
 
-        // Salto normale (solo se a terra e NON in volo)
         if (!isFlying && isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
@@ -81,7 +73,6 @@ public class PlayerMovement : MonoBehaviour
             if (animator != null) animator.Play(jumpStateName, 0, 0f);
         }
 
-        // Tasto per testare l'animazione del salto (opzionale)
         if (Input.GetKeyDown(KeyCode.J) && animator != null)
             animator.Play(jumpStateName, 0, 0f);
     }
@@ -89,7 +80,11 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
+        {
             isGrounded = true;
+            if (!isFlying && animator != null && !string.IsNullOrEmpty(runStateName))
+                animator.CrossFadeInFixedTime(runStateName, 0.1f, 0, 0f);
+        }
     }
 
     private void OnCollisionExit(Collision collision)
@@ -105,7 +100,6 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject);
             if (!isImmune)
             {
-                // Avvia l'immunità e il "volo"
                 if (flyCo != null) StopCoroutine(flyCo);
                 flyCo = StartCoroutine(FlyRoutine());
             }
@@ -117,66 +111,74 @@ public class PlayerMovement : MonoBehaviour
         isImmune = true;
         isFlying = true;
 
-        // Salva stato
+        if (animator != null && !string.IsNullOrEmpty(flyStateName))
+            animator.CrossFadeInFixedTime(flyStateName, 0.1f, 0, 0f);
+
         bool prevUseGravity = rb.useGravity;
         float savedBaseSpeed = basePlayerSpeed;
-        basePlayerSpeed = playerSpeed; // fotografa la velocità attuale come base
-
-        // Boost in avanti solo durante il volo (opzionale)
+        basePlayerSpeed = playerSpeed;
         playerSpeed += forwardBoostWhileFlying;
+
+        float duration = Mathf.Max(0.01f, flyDuration);
+        float clipLen = GetClipLength(animator, flyStateName);
+        prevAnimatorSpeed = animator != null ? animator.speed : 1f;
+        if (animator != null)
+            animator.speed = clipLen > 0f ? (clipLen / duration) : 1f;
 
         if (flyMode == FlyMode.GlideNoGravity)
         {
-            // 1) GLIDE: spegni gravità, sali fino a un target, poi “galleggia”
             rb.useGravity = false;
-
+            float rise = Mathf.Min(glideRiseTime, duration);
             float startY = transform.position.y;
             float targetY = startY + Mathf.Max(0.1f, glideRiseHeight);
             float t = 0f;
-
-            // fase di salita morbida
-            while (t < glideRiseTime)
+            while (t < rise)
             {
                 t += Time.deltaTime;
-                float y = Mathf.Lerp(startY, targetY, Mathf.Clamp01(t / glideRiseTime));
+                float y = Mathf.Lerp(startY, targetY, Mathf.Clamp01(t / Mathf.Max(0.0001f, rise)));
                 Vector3 p = transform.position; p.y = y;
                 transform.position = p;
                 yield return null;
             }
-
-            // fase di glide: mantieni più o meno la quota
             float timer = 0f;
-            while (timer < immuneDuration - glideRiseTime)
+            float remain = Mathf.Max(0f, duration - rise);
+            while (timer < remain)
             {
-                // opzionale: piccolo smoothing per non “driftare” in Y
-                Vector3 p = transform.position; 
+                Vector3 p = transform.position;
                 p.y = Mathf.Lerp(p.y, targetY, 0.08f);
                 transform.position = p;
-
                 timer += Time.deltaTime;
                 yield return null;
             }
-
-            // ripristina gravità
             rb.useGravity = prevUseGravity;
         }
-        else // BoostedJump
+        else
         {
-            // 2) BOOSTED JUMP: mantieni gravità ma dai una spinta forte verso l'alto
             rb.AddForce(Vector3.up * boostedJumpForce, ForceMode.Impulse);
             float timer = 0f;
-            while (timer < immuneDuration)
+            while (timer < duration)
             {
-                // niente di speciale qui: la gravità farà il suo, tu continui ad avanzare per codice
                 timer += Time.deltaTime;
                 yield return null;
             }
         }
 
-        // Ripristini
-        playerSpeed = basePlayerSpeed;   // togli il boost in avanti
+        if (animator != null) animator.speed = prevAnimatorSpeed;
+        playerSpeed = basePlayerSpeed;
         basePlayerSpeed = savedBaseSpeed;
         isFlying = false;
         isImmune = false;
+
+        if (animator != null && !string.IsNullOrEmpty(runStateName))
+            animator.CrossFadeInFixedTime(runStateName, 0.1f, 0, 0f);
+    }
+
+    private float GetClipLength(Animator anim, string stateName)
+    {
+        if (anim == null || anim.runtimeAnimatorController == null || string.IsNullOrEmpty(stateName)) return 0f;
+        var clips = anim.runtimeAnimatorController.animationClips;
+        if (clips == null || clips.Length == 0) return 0f;
+        var clip = clips.FirstOrDefault(c => c != null && c.name == stateName);
+        return clip != null ? clip.length : 0f;
     }
 }

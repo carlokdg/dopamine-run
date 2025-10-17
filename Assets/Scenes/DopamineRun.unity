@@ -4222,7 +4222,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2630815748524575241, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
       propertyPath: m_Name
-      value: FX_Explosion_Smoke
+      value: FX_Collision
       objectReference: {fileID: 0}
     - target: {fileID: 2630815748524575241, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
       propertyPath: m_IsActive
@@ -8816,12 +8816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 835beaad50a2d47bc9e329bdc26d5d23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  immunityDuration: 5
-  immuneLayerName: Immune
-  destroyCoinOnPickup: 1
-  _defaultLayer: 0
-  _immuneLayer: 0
-  _isImmune: 0
 --- !u!1001 &1402480801
 PrefabInstance:
   m_ObjectHideFlags: 0

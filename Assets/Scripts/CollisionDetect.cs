@@ -32,7 +32,7 @@ public class CollisionDetect : MonoBehaviour
         GameOverVoice.Play();
         fadeOut.SetActive(true);
         yield return new WaitForSeconds(4);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
 
     }
 

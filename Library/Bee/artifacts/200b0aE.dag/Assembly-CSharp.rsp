@@ -415,6 +415,7 @@
 "Assets/Scripts/MainMenuControl.cs"
 "Assets/Scripts/MasterInfo.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/RestartPage.cs"
 "Assets/Scripts/SegmentGenerator.cs"
 -langversion:9.0
 /deterministic

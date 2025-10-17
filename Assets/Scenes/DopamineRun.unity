@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ca08b3ebca149d99fd1823217de1cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionParticle: {fileID: 0}
+  explosionParticle: {fileID: 103870597}
   thePlayer: {fileID: 1398927144}
   playerAnim: {fileID: 323417336}
   collisionFX: {fileID: 1921453577}
